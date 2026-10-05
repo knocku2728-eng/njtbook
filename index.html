@@ -24,7 +24,15 @@
   <meta name="twitter:image" content="https://njtbook.com/image/njtbook-editorial.png">
   <meta name="theme-color" content="#fcfcfa">
   <link rel="preload" href="fonts/pretendard-site.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/dm-serif-display-latin.woff2" as="font" type="font/woff2" crossorigin>
   <style>
+    @font-face {
+      font-family: 'DM Serif Display';
+      src: url('fonts/dm-serif-display-latin.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
     @font-face {
       font-family: 'Pretendard';
       src: url('fonts/pretendard-site.woff2') format('woff2');
@@ -77,10 +85,11 @@
     .small-mark { display: flex; align-items: center; gap: 11px; color: var(--green); }
     .small-mark svg { width: 23px; height: 23px; }
     h1 {
+      font-family: 'DM Serif Display', Georgia, serif;
       font-size: clamp(64px, 12.5vw, 172px);
-      font-weight: 570;
+      font-weight: 400;
       line-height: 1.12;
-      letter-spacing: -.045em;
+      letter-spacing: -.018em;
       margin-top: 23px;
       margin-left: -.045em;
       white-space: nowrap;
@@ -144,7 +153,7 @@
       .masthead-top { font-size: 11px; }
       .small-mark { gap: 8px; }
       .small-mark svg { width: 20px; height: 20px; }
-      h1 { font-size: 12.35vw; margin-top: 28px; line-height: 1.2; letter-spacing: -.035em; }
+      h1 { font-size: 12.35vw; margin-top: 28px; line-height: 1.2; letter-spacing: -.015em; }
       .masthead-bottom { margin-top: 17px; }
       .masthead-bottom p { font-size: 13px; }
       .masthead-bottom span { display: none; }
